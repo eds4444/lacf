@@ -25,6 +25,7 @@
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri( ); ?>/css/slick.css">
 		<link href="aos%402.3.1/dist/aos.css" rel="stylesheet">
 
+		
   </head>
   <body>
 	  <header>
@@ -32,7 +33,7 @@
 			  <div class="header__inner">
 				  <div class="header__logo">
 					  <div class="logo"> 
-						  <a href="index.htm"> <img src="wp-content/themes/wptheme/logo.svg"> </a>
+						  <img src="<?php the_field('logo') ?>"> 
 						</div>
 					</div>
 				<nav class="header__nav">
