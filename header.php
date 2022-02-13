@@ -10,50 +10,84 @@
  */
 
 ?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="wp-content/themes/wptheme/favicon.ico" type="image/x-icon">
+		<title>Emagics l Экспресс доставка документов и грузов для вашей компании</title>
+		<link rel="stylesheet" href="wp-content/themes/wptheme/css/style.css">
+		<link rel="stylesheet" href="wp-content/themes/wptheme/css/media.css">
+		<link rel="stylesheet" href="wp-content/themes/wptheme/css/slick.css">
+		<link href="aos%402.3.1/dist/aos.css" rel="stylesheet">
+		<meta property="og:type" content="profile">
+		<meta property="og:title" content="Emagics l Экспресс доставка документов и грузов для вашей компании ">
+		<meta property="og:description" content="Экспресс доставка документов и грузов по всему миру">
+		<meta property="og:image" content="wp-content/themes/wptheme/img/pc_liner.png">
+		<meta property="og:url" content="https://emagics.ru/">
+		<meta property="og:site_name" content="Сделаем вам предложение по цене ниже среднерыночной без потери скорости  	и качества сервиса">
+		<meta property="og:see_also" content="https://emagics.ru/"> 
+		<script async="" src="gtag/js?id=UA-141192033-1"></script> 
+		<script>window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-	<?php wp_head(); ?>
-</head>
+			gtag('config', 'UA-141192033-1');
+		</script> 
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'lacf' ); ?></a>
-
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$lacf_description = get_bloginfo( 'description', 'display' );
-			if ( $lacf_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $lacf_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'lacf' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+  </head>
+  <body>
+	  <header>
+		  <div class="container">
+			  <div class="header__inner">
+				  <div class="header__logo">
+					  <div class="logo"> 
+						  <a href="index.htm"> <img src="wp-content/themes/wptheme/logo.svg"> </a>
+						</div>
+					</div>
+				<nav class="header__nav">
+					<ul>
+						<li><a data-anchor="about">Преимущества</a></li>
+						<li><a data-anchor="guarantees">Гарантии</a></li>
+						<li><a data-anchor="reviews">Отзывы</a></li>
+						<li><a data-popup="popup__trec">Отслеживание</a></li>
+						<li><a onclick="gtag('event', 'Личный кабинет', { 'event_category': 'openlk', 'event_action': 'click', });yaCounter48035300.reachGoal('lk'); return true;" href="https://lk.emagics.ru">Личный кабинет</a></li>
+						<li><a data-popup="popup__pay">Оплата</a></li>
+						<li><a data-anchor="contacts">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header__contacts">
+					<div class="header__button" data-popup="popup__2"> 
+						<span>позвоните мне</span>
+					</div>
+					<div class="header__number"> 
+						<a onclick="gtag('event', 'Клик по номеру', { 'event_category': 'num', 'event_action': 'click', });" href="tel:+74952527070">+7 (495) 252-70-70</a>
+						<p>Пн-Пт 10.00-19.00</p>
+					</div>
+				</div>
+				<div class="header__mobile_phone"> 
+					<a href="tel:+74952527070"> <img src="wp-content/themes/wptheme/img/mobile_header_phone.png" alt=""> </a>
+				</div>
+				<div class="toggleMenu"> 
+					<span class="toggleMenu__top"></span> 
+					<span class="toggleMenu__middle"></span> 
+					<span class="toggleMenu__bottom"></span>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<div class="header__menu">
+		<div class="top_menu">
+			<ul class="mobile__nav">
+				<li><a data-anchor="about">Преимущества</a></li>
+				<li><a data-anchor="guarantees">Гарантии</a></li>
+				<li><a data-anchor="faq">Ответы на вопросы</a></li>
+				<li><a data-popup="popup__pay">Оплата</a></li>
+				<li><a href="https://lk.emagics.ru/">Личный кабинет</a></li>
+				<li><a data-anchor="contacts">Контакты</a></li>
+			</ul>
+		</div>
+	</div>
