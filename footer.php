@@ -75,16 +75,23 @@
 
 
 		<script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-		<script src="wp-content/themes/wptheme/js/jquery-3.3.1.min.js"></script> 
-		<script src="wp-content/cache/wmac/js/wmac_single_b8d51d243ecae3dda08fe057fdb0e394.js"></script> 
-		<script src="wp-content/cache/wmac/js/wmac_single_af8a43f6f03a3461d94c5c3c4eb43f21.js"></script> 
+
+		<script src="<?php echo get_template_directory_uri( ); ?>/js/customizer.js"></script>
+		<script src="<?php echo get_template_directory_uri( ); ?>/js/jquery-3.3.1.min.js"></script>
+		<script src="<?php echo get_template_directory_uri( ); ?>/js/main.min.js"></script>
+		<script src="<?php echo get_template_directory_uri( ); ?>/js/navigation.js"></script>
+		<script src="<?php echo get_template_directory_uri( ); ?>/js/wmac_single_4ced15b6d03ae1ebc84b50d113e64347.js"></script>
+		<script src="<?php echo get_template_directory_uri( ); ?>/js/wmac_single_af8a43f6f03a3461d94c5c3c4eb43f21.js"></script>
+		<script src="<?php echo get_template_directory_uri( ); ?>/js/wmac_single_b8d51d243ecae3dda08fe057fdb0e394.js"></script> 
+
 		<script>$(".inputmask").inputmask({"mask":"+7(999) 999-9999"});</script> 
 		<script>$(".form__wrap").click(function(e){
 			e.stopPropagation();
-			//$("#mother").unbind("click"); //отвязка события клика
 			});</script> 
-		<script src="wp-content/cache/wmac/js/wmac_single_4ced15b6d03ae1ebc84b50d113e64347.js"></script> 
+
+
 		<script src="aos%402.3.1/dist/aos.js"></script> 
+
 		<script>$(".slickslide").on('afterChange', function (event, slick, currentSlide) {
 			$(".cp").text(currentSlide<9?`${currentSlide+1}`:currentSlide+1);
 			});</script> 

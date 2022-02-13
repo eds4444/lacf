@@ -13,29 +13,17 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
+
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="icon" href="wp-content/themes/wptheme/favicon.ico" type="image/x-icon">
-		<title>Emagics l Экспресс доставка документов и грузов для вашей компании</title>
-		<link rel="stylesheet" href="wp-content/themes/wptheme/css/style.css">
-		<link rel="stylesheet" href="wp-content/themes/wptheme/css/media.css">
-		<link rel="stylesheet" href="wp-content/themes/wptheme/css/slick.css">
-		<link href="aos%402.3.1/dist/aos.css" rel="stylesheet">
-		<meta property="og:type" content="profile">
-		<meta property="og:title" content="Emagics l Экспресс доставка документов и грузов для вашей компании ">
-		<meta property="og:description" content="Экспресс доставка документов и грузов по всему миру">
-		<meta property="og:image" content="wp-content/themes/wptheme/img/pc_liner.png">
-		<meta property="og:url" content="https://emagics.ru/">
-		<meta property="og:site_name" content="Сделаем вам предложение по цене ниже среднерыночной без потери скорости  	и качества сервиса">
-		<meta property="og:see_also" content="https://emagics.ru/"> 
-		<script async="" src="gtag/js?id=UA-141192033-1"></script> 
-		<script>window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
 
-			gtag('config', 'UA-141192033-1');
-		</script> 
+		<link rel="icon" href="wp-content/themes/wptheme/favicon.ico" type="image/x-icon">
+		<title>Lacf</title>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri( ); ?>/css/style.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri( ); ?>/css/media.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri( ); ?>/css/slick.css">
+		<link href="aos%402.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
   <body>
